@@ -29,7 +29,7 @@ toggleMode.addEventListener('click', () => {
           el.style.boxShadow = "none";
         }); 
         text.forEach(txt => { 
-          txt.style.color = "var(--dark-text)";
+          txt.style.color = "var(--light-text)";
         });        
         modeIcon.classList.remove('lni-sun-1'); 
         modeIcon.classList.add('lni-moon-half-right-5');
@@ -50,7 +50,7 @@ toggleMode.addEventListener('click', () => {
         });
 
         text.forEach(txt => { 
-          txt.style.color = "var(--dark-text)";
+          txt.style.color = "var(--light-text)";
         });
         
         darkImg.setAttribute("src", "img/daylight.png");
