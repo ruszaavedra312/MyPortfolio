@@ -4,6 +4,7 @@ const modeIcon = document.getElementById('mode-icon');
 const darkImg = document.getElementById('darkImg');
 const allTextElements = document.querySelectorAll('p, li, a, i');
 const spanH1 = document.querySelectorAll('h1, span');
+const text = document.querySelectorAll('p.text, li.text');
 let color1 = document.getElementsByClassName('spkt half-color');
 let color2 = document.getElementsByClassName('ksk half-color');
 
@@ -26,11 +27,14 @@ toggleMode.addEventListener('click', () => {
           el.style.color = "var(--font-white)";
           el.style.textShadow = "none";
           el.style.boxShadow = "none";
+        }); 
+        text.forEach(txt => { 
+          txt.style.color = "var(--dark-text)";
         });        
         modeIcon.classList.remove('lni-sun-1'); 
         modeIcon.classList.add('lni-moon-half-right-5');
         modeIcon.style.color = "var(--white-background-color)";
-        darkImg.setAttribute("src", "img/nightlight.png");
+        darkImg.setAttribute("src", "/img/nightlight.png");
     } else {
         // Activate light mode
         document.body.style.background = "var(--white-background-color)";
@@ -44,8 +48,12 @@ toggleMode.addEventListener('click', () => {
           el.style.textShadow = "4px 4px 8px #b8b9be, -4px -4px 8px #ffffff";
           el.style.boxShadow = "none";
         });
+
+        text.forEach(txt => { 
+          txt.style.color = "var(--dark-text)";
+        });
         
-        darkImg.setAttribute("src", "img/daylight.png");
+        darkImg.setAttribute("src", "/img/daylight.png");
         modeIcon.classList.remove('lni-moon-half-right-5'); 
         modeIcon.classList.add('lni-sun-1');
         
