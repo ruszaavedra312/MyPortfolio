@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>3D</title>
+</head>
+<body>
+    <style>
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .document {
+            place-items: center;
+        }
+    </style>
+    <div class="document">
+        <!-- Navigation Bar -->
+        <div class="nav-container">
+            <div class="nav-item">
+                <div class="nav-child">
+                    <div class="nav-a works"><a href="#home">Home</a></div>
+                    <div class="nav-a works"><a href="#works">Works</a></div>
+                    <div class="nav-a about"><a class="hide about-link-phone" href="#">About</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Front Page -->
+        <div class="first-page-container" id="home">
+            <div class="first-con">
+                <div class="title">
+                    <p>Hi, I'm a</p>
+                    <h1>Front</h1>
+                    <h1>End</h1>
+                    <h1>Dev</h1>
+                    <span>Rusz Saavedra</span>
+                </div>
+            </div>
+
+            <div class="first-con">
+                <div class="img-lamp">
+                    <img id="darkImg" src="/img/daylight.png" alt="">
+                </div>
+            </div>
+
+            <div class="account">
+                <ul>
+                    
+                    <li title="gallery" class="hide"><a class="nav-bar" href="gallery.html"><i class="lni lni-gallery"></i></a><span></span></li>
+                    <li title="Upwork"><a class="nav-acc" href="https://www.upwork.com/freelancers/~015cc422d2c2641f53?mp_source=share"><i class="fa-brands fa-upwork"></i></a></li>
+                    <li title="Github Account"><a class="nav-acc" href="https://github.com/ruszaavedra312"><i class="lni lni-github"></i></a></li>
+                    <li title="Linkedin"><a class="nav-acc" href="https://linkedin.com/in/ruszel-jeaus-saavedra-8394b2331"><i class="lni lni-linkedin"></i></a></li>
+                    <li title="Facebook"><a class="nav-acc" href="https://www.facebook.com/dekdek.saavedra.5?mibextid=ZbWKwL"><i class="lni lni-facebook"></i></a></li>
+                    <li title="Instagram"><a class="nav-acc" href="https://www.instagram.com/mr_presz/profilecard/?igsh=ZjQ3emxwd3Jnd3U1"><i class="lni lni-instagram"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="functions">
+                <ul>
+                    <li title="Back to top" class="hide"><a class="nav-bar" href="#home"><i class="lni lni-home-2"></i></a><span>Home</span></li>
+                    <li title="Works" class="hide"><a class="nav-bar" href="#works"><i class="lni lni-crown-3"></i></a><span>Works</span></li>
+                    <li title="About" class="hide"><a class="nav-bar about-link" href="#user"><i class="lni lni-user-4"></i></a><span>About</span></li>
+                    <li title="Toggle Switch Darck and Lightmode"><button id="modeToggle"><i id="mode-icon" class="lni lni-sun-1"></i></button><span>Mode</span></li>
+                    <li title="Download CV"><a class="nav-bar"href="/docs/2024-Resume-Ruszel Jeaus Saavedra.pdf" download="docs/2024-Resume-Ruszel Jeaus Saavedra.pdf" class="download-button"><i class="lni lni-download-1"></i></a><span>Download CV</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Second Page -->
+         <div class="project-container spkt" id="works">
+            <div class="project-item spkt">
+
+                <div class="project-img spkt">
+                    <div class="img-con spkt">
+                        <img class="bg" src="/img/spkt.png" alt="">
+                        <img class="hover" src="/img/spkt-hover.gif" alt="">
+                    </div>
+                    
+                    <div class="tools">
+                        <div>
+                            <p><b>Role:</b> Frontend and Lead Backend Developer</p>
+                        </div>
+                        <ul>
+                            <li><i class="fa-brands fa-python"></i></li>
+                            <li><i class="fa-solid fa-flask"></i></li>
+                            <li><i class="fa-brands fa-square-js"></i></li>
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fa-brands fa-css"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-desc spkt">
+                    <div class="spkt-title">
+                        <h1>SPEAK<span class="it half-color">iT</span></h1>
+                        <p>Capstone Project</p>
+                        
+                        <div class="dropdown">
+                            <span>February 2024 | <b><i class="fa-solid fa-circle-info"></i></b></span>
+                            <div class="info spkt">
+                                <b class="info-header"><i class="lni lni-question-mark-circle"></i></b>
+                                <span><b>What:</b> SPEAKiT translates hand poses and speech into ASL fingerspelling, enabling communication between Deaf individuals and non-signers, promoting inclusivity.</span>
+                                <span><b>Why:</b> SPEAKiT fosters inclusion by reducing misinterpretation, supporting equality, and preventing isolation within the Deaf and hearing communities.</span>
+                                <span><b>How:</b> SPEAKiT bridges communication gaps with sign language translation and speech-to-text features, breaking language barriers.</span>
+                                <span><b>Duration:</b> Oct 2023 - Feb 2024</p>
+                                <span><b>Contributor:</b> Wendell Atienza - Frontend and Web Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+
+         <!-- ksk Page -->
+         <div class="project-container ksk">
+            <div class="project-item ksk">
+
+                <div class="project-img ksk">
+                    <div class="img-con ksk">
+                        <img class="bg-ksk" src="/img/ksk.png" alt="">
+                        <img class="hover-ksk" src="/img/ksk-hover.gif" alt="">
+                    </div>
+                    
+                    <div class="tools ksk">
+                        <div>
+                            <p><b>Role:</b> Frontend and Lead Backend Developer</p>
+                        </div>
+                        <ul>
+                            <li><i class="fa-solid fa-database"></i></li>
+                            <li><i class="fa-brands fa-square-js"></i></li>
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fa-brands fa-css"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-desc ksk">
+                    <div class="ksk-title">
+                        <h1>Campus<span class="ksk half-color">Kiosk</span></h1>
+                        <p>Internship Project</p>
+                        
+                        <div class="dropdown">
+                            <span>July 2024 | <b><i class="fa-solid fa-circle-info"></i></b></span>
+                            <div class="info ksk">
+                                <b class="info-header"><i class="lni lni-question-mark-circle"></i></b>
+                                <span><b>What:</b> SPEAKiT translates hand poses and speech into ASL fingerspelling, enabling communication between Deaf individuals and non-signers, promoting inclusivity.</span>
+                                <span><b>Why:</b> SPEAKiT fosters inclusion by reducing misinterpretation, supporting equality, and preventing isolation within the Deaf and hearing communities.</span>
+                                <span><b>How:</b> SPEAKiT bridges communication gaps with sign language translation and speech-to-text features, breaking language barriers.</span>
+                                <span><b>Duration:</b> Oct 2023 - Feb 2024</p>
+                                <span><b>Contributor:</b> Wendell Atienza - Frontend and Web Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <footer>
+            <div class="footer-container">
+                <ul>
+                    <li>I'm may not be skilled enough but I am willing to learn</li>
+                    <li>All rights reserve 2025</li>
+                </ul>
+            </div>
+         </footer>
+    </div>
+    <!-- About - Modal -->
+    <div class="modal-container">
+        <div class="modal-content">
+            <div class="modal-items">
+                <div class="modal-header">
+                    <div class="modal-header-info">
+                        <h2>Good Day!</h2>
+                    </div>
+                    <div class="profile-info">
+                        <div class="myImg">
+                            <img title="My Profile Picture" alt="My Profile Picture" src="/img/myProfile.jpg">
+                        </div>
+                        <div class="profile-desc">
+                            <div class="profile">
+                                <div class="statement">
+                                    <h2>Ruszel Jeaus Saavedra</h2>
+                                    <p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi, call me <b>Rusz</b>, a fresh graduate and aspiring <b>Frontend Developer</b> with a passion for creating intuitive and visually appealing web experiences. I hold a degree in <b>BS Information Technology</b> from the <b>Polytechnic University of the Philippines</b>, Unisan Quezon Campus, and I’m proud to call Gumaca, Quezon, my home. I thrive on learning new technologies and am excited to contribute to innovative projects that make a difference.
+                                    </p>
+                                </div>
+
+                                <div class="experience">
+                                    <h2>Experience</h2>
+                                    <ul>
+                                        <li><b>Web Developer Intern</b> | March 2024 - July 2024</li>
+                                        <li>Polytechnic University of the Philippines</li>
+                                        <li>Unisan Quezon Campus</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="skills">
+                                    <h2>Skills</h2>
+                                    <ul>
+                                        <li>HTML & CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>Python</li>
+                                        <li>Flask</li>
+                                        <!-- Add more skills here -->
+                                    </ul>
+                                </div>
+
+                                <div class="certi">
+                                    <h2>Certificate(s)</h2>
+                                    <ul>
+                                        <li><b>System Implementation</b> | PUP Unisan</li>
+                                        <li> &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;Queuing System | August 2024</li>
+                                        <li><b>Outstanding Leadership Award</b> | PUP Unisan</li>
+                                        <li><b>Presidents Lister</b> | A.Y 2023-2024</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="contact">
+                                    <h2>Contact</h2>
+                                    <ul>
+                                        <li>Email: ruszsaavedraa@gmail.com</li>
+                                        <li>Phone: +63 935 553 9509</li>
+                                        <!-- <li>LinkedIn: <a href="https://www.linkedin.com/in/your-profile">your-profile</a></li> -->
+                                        <!-- Add more contact options here -->
+                                    </ul>
+                                </div>
+                                
+                                <div class="education">
+                                    <h2>Education</h2>
+                                    <ul>
+                                        <li>BS Information Technology, Polytechnic University of the Philippines, Unisan Quezon Campus</li>
+                                        <!-- Add additional education details if needed -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="profile-footer">
+                        <p>I may not be skilled enough but I am willing to learn</p>
+                        <p>All rights reserve 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>
