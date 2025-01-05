@@ -30,7 +30,7 @@ toggleMode.addEventListener('click', () => {
         modeIcon.classList.remove('lni-sun-1'); 
         modeIcon.classList.add('lni-moon-half-right-5');
         modeIcon.style.color = "var(--white-background-color)";
-        darkImg.setAttribute("src", "/img/nightlight.png");
+        darkImg.setAttribute("src", "img/nightlight.png");
     } else {
         // Activate light mode
         document.body.style.background = "var(--white-background-color)";
@@ -45,7 +45,7 @@ toggleMode.addEventListener('click', () => {
           el.style.boxShadow = "none";
         });
         
-        darkImg.setAttribute("src", "/img/daylight.png");
+        darkImg.setAttribute("src", "img/daylight.png");
         modeIcon.classList.remove('lni-moon-half-right-5'); 
         modeIcon.classList.add('lni-sun-1');
         
